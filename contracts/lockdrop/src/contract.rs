@@ -8,13 +8,11 @@ use cosmwasm_std::{
 
 use cw20::Cw20ReceiveMsg;
 
-// TODO: Change to mars_core when repo and dependencies become public and replace package
-// with the mars_core one
-use mars_core_deps::address_provider::msg::QueryMsg as AddressProviderQueryMsg;
-use mars_core_deps::address_provider::MarsContract;
-use mars_core_deps::incentives::msg::ExecuteMsg as IncentivesExecuteMsg;
-use mars_core_deps::incentives::msg::QueryMsg as IncentivesQueryMsg;
-use mars_core_deps::red_bank::msg::ExecuteMsg as RedBankExecuteMsg;
+use mars_core::address_provider::msg::QueryMsg as AddressProviderQueryMsg;
+use mars_core::address_provider::MarsContract;
+use mars_core::incentives::msg::ExecuteMsg as IncentivesExecuteMsg;
+use mars_core::incentives::msg::QueryMsg as IncentivesQueryMsg;
+use mars_core::red_bank::msg::ExecuteMsg as RedBankExecuteMsg;
 
 use mars_periphery::auction::Cw20HookMsg as AuctionCw20HookMsg;
 use mars_periphery::helpers::{

@@ -9,8 +9,6 @@ use mars_periphery::lockdrop::{
 };
 use terra_multi_test::{App, BankKeeper, ContractWrapper, Executor, TerraMockQuerier};
 
-use mars_core_dev as mars_core;
-
 fn mock_app() -> App {
     let api = MockApi::default();
     let env = mock_env();
@@ -2433,7 +2431,7 @@ fn test_claim_rewards_and_unlock() {
             .emission_per_second
     );
     assert_eq!(
-        mars_core_dev::math::decimal::Decimal::zero(),
+        mars_core::math::decimal::Decimal::zero(),
         asset_incentive_response
             .asset_incentive
             .clone()

@@ -298,7 +298,7 @@ fn instantiate_airdrop_lockdrop_contracts(
         .instantiate_contract(
             mars_address_provider_code_id,
             owner.clone(),
-            &mars_core_dev::address_provider::msg::InstantiateMsg {
+            &mars_core::address_provider::msg::InstantiateMsg {
                 owner: owner.clone().to_string(),
             },
             &[],
@@ -311,8 +311,8 @@ fn instantiate_airdrop_lockdrop_contracts(
     app.execute_contract(
         owner.clone(),
         mars_address_provider_instance.clone(),
-        &mars_core_dev::address_provider::msg::ExecuteMsg::UpdateConfig {
-            config: mars_core_dev::address_provider::msg::ConfigParams {
+        &mars_core::address_provider::msg::ExecuteMsg::UpdateConfig {
+            config: mars_core::address_provider::msg::ConfigParams {
                 owner: None,
                 council_address: None,
                 incentives_address: None,

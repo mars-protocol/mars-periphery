@@ -38,7 +38,6 @@ cosmwasm-bignumber = "2.2.0"
 cosmwasm-schema = { version = "0.16.0" }
 cosmwasm-storage = { version = "0.16.0" }
 terra-multi-test = {git = "https://github.com/astroport-fi/terra-plus.git", branch="main"}
-mars-core-dev =  { package = "mars-core", path = "../../../mars-core/packages/mars-core" }
 
 # needed for intergration testing
 generator-proxy-to-mars = { git = "https://github.com/astroport-fi/astro-generator-proxy-contracts.git", branch = "main", package = "generator-proxy-to-mars"}
@@ -50,7 +49,8 @@ astroport-factory =  {git = "https://github.com/astroport-fi/astroport-core.git"
 astroport-pair =  {git = "https://github.com/astroport-fi/astroport-core.git", tag = "v1.0.0", package = "astroport-pair"}
 astroport-token =  {git = "https://github.com/astroport-fi/astroport-core.git", tag = "v1.0.0", package = "astroport-token"}
 
-mars-address-provider =  { path = "../../../mars-core/contracts/mars-address-provider"}
+mars-core = { git = "https://github.com/mars-protocol/mars-core", package = "mars-core"}
+mars-address-provider = { git = "https://github.com/mars-protocol/mars-core", package = "mars-address-provider"}
 
 mars-airdrop =  { path = "../airdrop" }
 mars-lockdrop =  { path = "../lockdrop" }

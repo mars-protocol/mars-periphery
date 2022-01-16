@@ -39,7 +39,7 @@ sha3 = "0.9.1"
 [dev-dependencies]
 cosmwasm-schema = { version = "0.16.0" }
 cosmwasm-storage = { version = "0.16.0" }
-terra-multi-test = {git = "https://github.com/astroport-fi/terra-plus.git", branch="main"}
+terra-multi-test = {git = "https://github.com/astroport-fi/terra-plus.git"}
 # needed for tests
 mars-auction =  { path = "../auction" }
 astroport-pair = {git = "https://github.com/astroport-fi/astroport-core.git", package = "astroport-pair", tag = "v1.0.0"}

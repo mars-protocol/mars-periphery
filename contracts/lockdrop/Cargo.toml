@@ -26,7 +26,7 @@ library = []
 
 [dependencies]
 mars-periphery = { path = "../../packages/mars-periphery" }
-mars-core-deps = { path = "../../packages/mars-core-deps" }
+mars-core = { git = "https://github.com/mars-protocol/mars-core", package = "mars-core"}
 
 cosmwasm-std = { version = "0.16.0", features = ["iterator"] }
 cw-storage-plus = "0.9"
@@ -42,12 +42,11 @@ thiserror = { version = "1.0.26" }
 cosmwasm-schema = { version = "0.16.0" }
 mars-auction =  { path = "../auction" }
 terra-multi-test = {git = "https://github.com/astroport-fi/terra-plus.git", branch="main"}
-# For testcases
 
-mars-core-dev =  { path = "../../../mars-core/packages/mars-core", package = "mars-core"}
-mars-address-provider =  { path = "../../../mars-core/contracts/mars-address-provider"}
-mars-staking = { path = "../../../mars-core/contracts/mars-staking"}
-mars-red-bank = { path = "../../../mars-core/contracts/mars-red-bank"}
-mars-ma-token = { path = "../../../mars-core/contracts/mars-ma-token"}
-mars-incentives = { path = "../../../mars-core/contracts/mars-incentives"}
-mars-xmars-token = { path = "../../../mars-core/contracts/mars-xmars-token"}
+# For testcases
+mars-address-provider = { git = "https://github.com/mars-protocol/mars-core", package = "mars-address-provider"}
+mars-staking = { git = "https://github.com/mars-protocol/mars-core", package = "mars-staking"}
+mars-red-bank = { git = "https://github.com/mars-protocol/mars-core", package = "mars-red-bank"}
+mars-ma-token = { git = "https://github.com/mars-protocol/mars-core", package = "mars-ma-token"}
+mars-incentives = { git = "https://github.com/mars-protocol/mars-core", package = "mars-incentives"}
+mars-xmars-token = { git = "https://github.com/mars-protocol/mars-core", package = "mars-xmars-token"}
